@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: #e8f5e9; /* Blijedo zelena pozadina */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  background-color: #2e7d32; /* Tamnozelena za eleganciju */
+  opacity: 90%;
+  color: #2e7d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image:url(background.jpg) ;
+
+}
+.footer{
+  width: 100%;
+  height: 75%;
+  background-color: #2e7d32; /* Tamnozelena za eleganciju */
+  opacity: 90%;
+  color: #2e7d32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image:url(background.jpg) ;
+
+}
+
+.headercont {
+  text-align: center;
+}
+
+.botaniq {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.smartgreenhouse {
+  font-size: 64px;
+}
+
+.midcont {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+
+}
+
+.leftcont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.podnaslov {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #1b5e20; /* Tamnozelena */
+  margin-bottom: 20px;
+}
+
+.switchcont {
+  padding: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a5d6a7; /* Svijetlo zelena */
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #388e3c; /* Tamnija zelena */
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Right container */
+.rightcont {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #f1f8e9; /* Blijedo zelena */
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-right: 250px;
+  margin-top: 50px;
+}
+
+.boxcont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 15px;
+}
+
+/* Zadnji box - Water Tank zauzima cijelu širinu */
+.reading-wide {
+  grid-column: span 2;
+}
+
+.reading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.reading-info {
+  text-align: center;
+}
+
+.naslovocitanja {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1b5e20; /* Tamnozelena */
+}
+
+.ocitanja {
+  font-size: 24px;
+  color: #388e3c; /* Srednje zelena */
+  font-weight: bold;
+}
+
+/* Switch container */
+.switch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.switch-label {
+  font-size: 16px;
+  color: #4e342e; /* Zemljano smeđa za kontrast */
+  margin-top: 5px;
+}
+.mode-info {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #2e7d32;
+
+}
